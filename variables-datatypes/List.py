@@ -26,10 +26,10 @@ logger.info(labour_name[2:6])
 logger.info(labour_name[1:6:2])
 
 lst = [1,2,3,4,2]
-# lst.remove(2)
-# logger.info(f"List after removing 2 is {lst}")
+lst.remove(2)
+logger.info(f"List after removing 2 is {lst}")
 # lst.pop(2)
-# # logger.info(f"List after poping 2nd index is {lst}")
+# logger.info(f"List after poping 2nd index is {lst}")
 # lst.sort(reverse=True)
 # logger.info(f"List after sorting is {lst}")
 print(len(lst))
