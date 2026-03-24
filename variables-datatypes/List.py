@@ -49,3 +49,11 @@ labour_details[0:3] = ["Khan", "Ansari", "Shaikh"]
 logger.info(f"Labour details after changing value is {labour_details}")
 
 #----------------------------------------------------------
+
+#---------------------Split--------------------------------
+hash_code = "ABC-1234-XYZ-5678-PQR-9012-LMN-3456-TUV-7890"
+hash_code_split = hash_code.split("-")
+logger.info(f"Hash code after split is {hash_code_split}") 
+
+
+#----------------------------------------------------------
