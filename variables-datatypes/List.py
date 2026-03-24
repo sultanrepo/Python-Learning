@@ -33,3 +33,19 @@ logger.info(f"List after poping 2nd index is {lst}")
 lst.sort(reverse=True)
 logger.info(f"List after sorting is {lst}")
 print(len(lst))
+
+#--------------------POP-----------------------------------
+labour_details = ["Khan", "Ansari", "Shaikh", 400,500,600]
+wage = labour_details.pop()
+if wage > 500 :
+    print("Costly labor charge")
+else :
+    print("Affordable labor charge")
+#----------------------------------------------------------
+
+#--------------------Change Value--------------------------
+labour_details = ["Khn", "Ansri", "Shikh", 400,500,600]
+labour_details[0:3] = ["Khan", "Ansari", "Shaikh"]
+logger.info(f"Labour details after changing value is {labour_details}")
+
+#----------------------------------------------------------
