@@ -55,5 +55,19 @@ hash_code = "ABC-1234-XYZ-5678-PQR-9012-LMN-3456-TUV-7890"
 hash_code_split = hash_code.split("-")
 logger.info(f"Hash code after split is {hash_code_split}") 
 
+#----------------------------------------------------------
+
+#-----------------Append and sort list----------------------
+
+numbers = [22,45,87,56,87,11,3,112,548,235]
+for i in range(len(numbers)):
+    if numbers[i] < 100:
+        print(i)
+    else:
+        numbers.append(100)
+        exit()
+
+logger.info(f"Numbers after appending is {numbers}")
 
 #----------------------------------------------------------
+
