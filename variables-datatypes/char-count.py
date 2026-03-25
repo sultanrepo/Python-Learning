@@ -2,6 +2,6 @@ paragraph = "Every day brings new opportunities to learn, improve, and grow into
 para_list = paragraph.split(" ")
 char_count = 0
 for word in para_list:
-    if word == "the":
+    if word == "the" or word == "The":
         char_count += 1
 print(f"The word 'the' appears {char_count} times in the paragraph.")
