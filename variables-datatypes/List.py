@@ -60,14 +60,18 @@ logger.info(f"Hash code after split is {hash_code_split}")
 #-----------------Append and sort list----------------------
 
 numbers = [22,45,87,56,87,11,3,112,548,235]
+numbers.append(100)
+print(len(numbers))
 for i in range(len(numbers)):
-    if numbers[i] < 100:
-        print(i)
-    else:
-        numbers.append(100)
-        exit()
+    for j in range(i+1, len(numbers)):
+        if numbers[i] > numbers[j]:
+            # temp = numbers[i]
+            # numbers[i] =numbers[j]
+            # numbers[j] =temp
+            numbers[i], numbers[j] = numbers[j], numbers[i]
+logger.info(f"Numbers after sorting is {numbers}")   
 
-logger.info(f"Numbers after appending is {numbers}")
+
 
 #----------------------------------------------------------
 
