@@ -70,8 +70,17 @@ for i in range(len(numbers)):
             # numbers[j] =temp
             numbers[i], numbers[j] = numbers[j], numbers[i]
 logger.info(f"Numbers after sorting is {numbers}")   
+#----------------------------------------------------------
 
+#----------------Apend and sort decending------------------
 
-
+numbers = [202, 165,89,76,12]
+#number to insert = 15
+for i in range(len(numbers)):
+    if numbers[i] < 15:
+        temp = numbers[i]
+        numbers[i] = 15
+        numbers.append(temp)
+logger.info(f"Numbers after inserting 15 is {numbers}")
 #----------------------------------------------------------
 
