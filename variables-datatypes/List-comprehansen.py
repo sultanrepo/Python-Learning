@@ -16,3 +16,7 @@ numbers = [1,2,3,4,5,6,7,8,9,10]
 even_numbers = [x for x in numbers if x % 2 == 0]
 print(f"Even numbers are: {even_numbers}")
 
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+even_odd_numbers = ["even" if x % 2 == 0 else "odd" for x in numbers]
+print(f"Even and odd numbers are: {even_odd_numbers}")
