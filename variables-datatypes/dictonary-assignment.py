@@ -1,6 +1,6 @@
 # Assignment:-
 
-# Total working days if if total working days was 50
+# Total labour cost if total working days was 50
 # out of which mahesh was absent for 3 days and jagmohan was absent for  7 days
 # find out the total labour cost?
 
@@ -13,3 +13,50 @@ labour_data = {
     "Aftab": 500,
     "Mota": 250
 }
+
+total_cost = 0
+for key in labour_data:
+    total_cost = total_cost + labour_data[key]
+
+total_cost_for_50days = total_cost * 50
+mahesh_absent = 3
+jagmohan_abset = 7
+mahesh_absent_cost = labour_data["Mahesh"] * mahesh_absent
+jogmohan_absent_cost = labour_data["Jagmohan"] * jagmohan_abset
+absent_sum = mahesh_absent_cost + jogmohan_absent_cost
+total_cost_with_absent = total_cost_for_50days - absent_sum
+print(f"Total labour cost for 50 days is: {total_cost_for_50days}")
+print(f"Total labour cost for 50 days with absent is: {total_cost_with_absent}")
+
+#----------------------------------------------------------------------------------
+
+labour_data = {
+    "Sultan": 500,
+    "Meraj": 400,
+    "Mahesh": 300,
+    "Jagmohan": 200,
+    "Ejaz": 100,
+    "Aftab": 500,
+    "Mota": 250
+}
+
+# Total daily cost
+total_cost = sum(labour_data.values())
+
+# Total for 50 days
+total_cost_for_50days = total_cost * 50
+
+# Absent days
+mahesh_absent = 3
+jagmohan_absent = 7
+
+# Deduct absent cost
+mahesh_absent_cost = labour_data["Mahesh"] * mahesh_absent
+jagmohan_absent_cost = labour_data["Jagmohan"] * jagmohan_absent
+
+absent_sum = mahesh_absent_cost + jagmohan_absent_cost
+
+# Final cost
+total_cost_with_absent = total_cost_for_50days - absent_sum
+
+print(f"Final labour cost: {total_cost_with_absent}")
