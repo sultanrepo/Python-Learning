@@ -60,3 +60,35 @@ absent_sum = mahesh_absent_cost + jagmohan_absent_cost
 total_cost_with_absent = total_cost_for_50days - absent_sum
 
 print(f"Final labour cost: {total_cost_with_absent}")
+
+
+labour_data = {
+    "Sultan": 500,
+    "Meraj": 400,
+    "Mahesh": 300,
+    "Jagmohan": 200,
+    "Ejaz": 100,
+    "Aftab": 500,
+    "Mota": 250
+}
+
+print(labour_data.get("Sultan1"))
+print(labour_data.keys())
+print(labour_data.values())
+print(labour_data.items())
+labour_data.update({"sultan": 600})
+print(labour_data)
+
+new_dict = {
+    "Khan": 700,
+    "Kamal": 800,
+    "Jamal": 900
+}
+
+final_dict = {**labour_data, **new_dict}
+print(final_dict)
+print(f"before pop: {new_dict}")
+new_dict.pop("Kamal")
+print(f"after pop: {new_dict}")
+
+print(new_dict.popitem())
