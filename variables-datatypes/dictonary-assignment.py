@@ -92,3 +92,9 @@ new_dict.pop("Kamal")
 print(f"after pop: {new_dict}")
 
 print(new_dict.popitem())
+
+labour_data_copy = labour_data.copy()
+print(f"Original: {labour_data}")
+print(f"Copy: {labour_data_copy}")
+print(id(labour_data))
+print(id(labour_data_copy))
